@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* Caveat font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+
+/* 
+ * ヘッダー、グローバルナビゲーション
+ */
+header {
+  position: fixed;
+  background-color: #FFFFFFDD;
+  width: 100%;
+  height: 32px;
+  text-align: center;
+}
+
+#g-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+#g-nav ul li {
+  margin: 0 10px;
+}
+
+#header-space {
+  height: 32px;
+}
+
+
+/*
+ * main
+ */
+main {
+  min-height: 100vh;
+}
+
+main section:nth-child(even) {
+  background-image: linear-gradient(lavenderblush, azure);
+}
+
+main section:nth-child(odd) {
+  background-image: linear-gradient(azure, lavenderblush);
+}
+
+
+/*
+ * mainlogo
+ */
+#mainlogo {
+  padding: 150px 0;
+  font-family: 'Caveat', cursive;
+}
+
+#mainlogo div {
+  font-size: 4rem;
+  text-align: center;
+}
+
+/*
+ * about
+ */
+#about {
+  padding: 55px 5% 0;
+}
+
+#about .fcon1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 15px 0 0 15px;
+}
+
+#about .fcon1item1 {
+  width: 100px;
+}
+
+#about .fcon1 .fcon1item2 {
+  width: 70%;
+}
+
+#about .fcon2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .fcon2 ul {
+  list-style:none;
+}
+
+#about .fcon2item1 {
+  padding: 0 0 10px;
+}
+
+#about .fcon2item2 {
+  margin: 0 0 0 20px;
+}
+
+
+/*
+ * works
+ */
+#works {
+  padding: 55px 5% 0;
+}
+
+#works h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 0 15px;
+}
+
+#works .fcon1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px 0 30px 15px;
+}
+
+#works .fcon1item1 {
+  width: 25%;
+}
+
+#works .fcon1item1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+#works .fcon1item2 {
+  width: 73%;
+  margin: 0 0 0 2%;
+}
+
+#works .fcon2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#works .fcon2 div {
+  padding: 5px 0;
+}
+
+#works .fcon2item1 {
+  width: 20%;
+}
+
+#works .fcon2item2 {
+  width: 80%;
+}

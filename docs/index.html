@@ -2,9 +2,163 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0", shrink-to-fit=no>
+    <meta name="description" content="フロントエンドエンジニア志望の池田智哉のポートフォリオサイトです">
+    <link rel='stylesheet' href='reset.css'>
+    <link rel='stylesheet' href='style.css'>
     <title>Tomoya Ikeda's portfolio</title>
   </head>
   <body>
-    <div id="root">Welcome to Tomoya Ikeda’s portfolio</div>
+    <header id='header'>
+      <nav id='g-nav'>
+        <ul>
+          <!--<li><a href='#main'>Top</a></li>-->
+          <li><a href='#about'>About</a></li>
+          <li><a href='#works'>Works</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id='header-space'></div>
+
+    <main id='main'>
+      <section id='mainlogo'>
+        <div>Tomoya Ikeda's portfolio</div>
+      </section>
+
+      <section id='about'>
+        <h2>About</h2>
+        <dl>
+          <div class='fcon1'>
+            <dt class='fcon1item1'>名前</dt>
+            <dd class='fcon1item2'>池田 智哉</dd>
+          </div>
+          <div class='fcon1'>
+            <dt class='fcon1item1'>住所</dt>
+            <dd class='fcon1item2'>大阪市内</dd>
+          </div>
+          <div class='fcon1'>
+            <dt class='fcon1item1'>キャリア</dt>
+            <dd class='fcon1item2'>
+              2007年、組込みシステムのSEとして就職。車載関連のグラフィックライブラリ/ドライバの開発に従事。<br>
+              2018年、1度目の転職。FA関連の組み込みシステム開発に従事。<br>
+              2021年、転勤を機に退職。フロントエンドエンジニアへ転向するため勉強中。<br>
+            </dd>
+          </div>
+          <div class='fcon1'>
+            <dt class='fcon1item1'>スキル</dt>
+            <dd class='fcon1item2 fcon2'>
+              <ul>
+                <li class='fcon2item1'>組込みSE（経験年数3年以上）</dt>
+                <ul class='fcon2item2'>
+                  <li>言語：C言語</li>
+                  <li>OS：T-Kernel、Linux、Windows、VxWorks</li>
+                  <li>開発環境：eBinder、TortoiseSVN</li>
+                </ul>
+                <li class='fcon2item1'>フロントエンドエンジニア（経験年数1年未満）</dt>
+                <ul class='fcon2item2'>
+                  <li>言語：HTML、CSS、JavaScript</li>
+                  <li>ライブラリ：Vue.js、jQuery</li>
+                  <li>開発環境：AWS、VueCLI、Git</li>
+                </ul>
+              </ul>
+            </dd>
+          </div>
+          <div class='fcon1'>
+            <dt class='fcon1item1'>お問合せ</dt>
+            <dd class='fcon1item2'><a href='mailto:ntntmyikd@gmail.com'>ntntmyikd@gmail.com</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id='works'>
+        <h2>Works</h2>
+        <div>
+
+          <h3>試合の組み合わせ作成サービス</h3>
+          <div class='fcon1'>
+            <div class='fcon1item1'>
+              <a href='https://tiw-ws.com/drawreco/' target='_blank' rel='noopener noreferrer'>
+                <img src='img/DrawReco.png' alt='DrawReco Image' class='image'>
+              </a>
+            </div>
+            <div class='fcon1item2 fcon2'>
+              <div class='fcon2item1'>サービス名</div>
+              <div class='fcon2item2'>DrawReco</div>
+              <div class='fcon2item1'>URL</div>
+              <div class='fcon2item2'>
+                <a href='https://tiw-ws.com/drawreco/' target='_blank' rel='noopener noreferrer'>
+                  https://tiw-ws.com/drawreco/
+                </a>
+              </div>
+              <div class='fcon2item1'>ソースコードURL</div>
+              <div class='fcon2item2'>
+                <a href='https://github.com/tom-ikedy/drawreco' target='_blank' rel='noopener noreferrer'>
+                  https://github.com/tom-ikedy/drawreco
+                </a>
+              </div>
+              <div class='fcon2item1'>作成期間</div>
+              <div class='fcon2item2'>約4週間</div>
+              <div class='fcon2item1'>開発環境・ツール</div>
+              <div class='fcon2item2'>AWS、VueCLI、Git</div>
+              <div class='fcon2item1'>ライブラリ</div>
+              <div class='fcon2item2'>HTML、CSS、SCSS、JavaScript、Vue.js</div>
+              <div class='fcon2item1'>バックエンド</div>
+              <div class='fcon2item2'>Firebase</div>
+              <div class='fcon2item1'>開発の背景</div>
+              <div class='fcon2item2'>
+                「テニスの練習試合で、対戦相手をランダムに試合を組むアプリケーションが欲しい」という知人の要望により作成。<br>
+                <!--それだけであれば既存のサービスがあったため、独自の機能として試合結果の記録とランキング表示機能を追加した。<br>-->
+                Vue.jsの習熟に加えて、Gitでのソースコード管理とレスポンシブ対応を新たに学んだ。<br>
+                フィードバックを受けて機能を修正・追加中。<br>
+              </div>
+              <div class='fcon2item1'>開発中に苦労した事</div>
+              <div class='fcon2item2'>
+                レスポンシブ対応として、携帯表示用にハンバーガーメニューを実装したが、CSSのアニメーションをちゃんと理解して実装するのに苦労した。<br>
+                プログラミングスクールの卒業課題作成時よりもデザインに力を入れたが、見やすい・使いやすい構成とするのに苦労した。<br>
+              </div>
+            </div>
+          </div>
+
+          <h3>お気に入りのお店メモ登録サービス</h3>
+          <div class='fcon1'>
+            <div class='fcon1item1'>
+              <a href='https://tiw-ws.com/locations/' target='_blank' rel='noopener noreferrer'>
+                <img src='img/LocationS.png' alt='LocationS Image' class='image'>
+              </a>
+            </div>
+            <div class='fcon1item2 fcon2'>
+              <div class='fcon2item1'>サービス名</div>
+              <div class='fcon2item2'>LocationS</div>
+              <div class='fcon2item1'>URL</div>
+              <div class='fcon2item2'>
+                <a href='https://tiw-ws.com/locations/' target='_blank' rel='noopener noreferrer'>
+                  https://tiw-ws.com/locations/
+                </a>
+              </div>
+              <div class='fcon2item1'>作成期間</div>
+              <div class='fcon2item2'>約3週間</div>
+              <div class='fcon2item1'>開発環境・ツール</div>
+              <div class='fcon2item2'>AWS、VueCLI</div>
+              <div class='fcon2item1'>ライブラリ</div>
+              <div class='fcon2item2'>HTML、CSS、JavaScript、Vue.js</div>
+              <div class='fcon2item1'>バックエンド</div>
+              <div class='fcon2item2'>Firebase</div>
+              <div class='fcon2item1'>開発の背景</div>
+              <div class='fcon2item2'>
+                プログラミングスクール（TechAcademy フロントエンドコース）の卒業課題として作成。<br>
+                ペルソナとMVP設定から始まり、サイトマップ作成→ワイヤーフレーム作成→コーディングまで、一通りのWebサービス制作の流れを経験した。<br>
+                <!--サービスの性質上、ユーザの登録に応じてページ数が増えるため、Vue Routerの動的ルートマッチングを利用した。<br>-->
+              </div>
+              <div class='fcon2item1'>開発中に苦労した事</div>
+              <div class='fcon2item2'>
+                開発環境、言語、ライブラリ、ツールなど全てにおいて初めて触るものばかりだったため、慣れるのに時間がかかった。<br>
+                特にJavaScriptにおける配列・オブジェクトの操作方法が、これまで使っていたC言語と異なっていたため、自在に使えるまで苦労した。<br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
   </body>
 </html>
